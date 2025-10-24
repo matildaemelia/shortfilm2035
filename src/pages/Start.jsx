@@ -50,7 +50,7 @@ export default function Start() {
                     {[
                         { name: "Zahra", role: "Cinematographer, ghost" },
                         { name: "Adam", role: "Editor" },
-                        { name: "Ibbe", role: "Luke" },
+                        { name: "Ibbe", role: "Actor (Luke)" },
                         { name: "Matilda", role: "Writer, webdesigner" }
                     ].map((person, i) => (
                         <motion.div

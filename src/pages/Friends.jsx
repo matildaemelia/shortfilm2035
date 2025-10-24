@@ -6,7 +6,7 @@ export default function Friends() {
     const { friend, setFriend, unlocked } = useGame();
 
     const friends = [
-        { name: 'Richie', unlocked: true },
+        { name: 'Rick', unlocked: true },
         { name: 'Ana', unlocked: false },
         { name: 'Sam', unlocked: false },
     ];
