@@ -79,7 +79,16 @@ export default function Start() {
                 viewport={{ once: true }}
                 className='text-gray-400 mb-10'
                 >
-                    Hello
+                    The world of 2035 is the happiest it has ever been. Everyone who wishes can live the life they desire, with friends they love and be completely themselves without judgement.{' '}
+                </motion.p>
+                <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delaty: 0.2 }}
+                viewport={{ once: true }}
+                className='text-gray-400 mb-10'
+                >
+                    The world of 2035 is the happiest it has ever been. Everyone who wishes can live the life they desire, with friends they love and be completely themselves without judgement.{' '}
                 </motion.p>
             </section>
 
