@@ -79,7 +79,7 @@ export default function Start() {
                 viewport={{ once: true }}
                 className='text-gray-400 mb-10'
                 >
-                    The world of 2035 is the happiest it has ever been. Everyone who wishes can live the life they desire, with friends they love and be completely themselves without judgement.{' '}
+                    The world of 2035 is the happiest it has ever been. Thanks to 99% Happy everyone who wishes can live the life they desire, with friends they love, and be completely themselves without judgement.{' '}
                 </motion.p>
             </section>
 
@@ -132,6 +132,7 @@ export default function Start() {
                 >
                     Quit / Back to Start ↑
                 </button>
+                <h1 className="text-red-500 text-4xl mt-10">Tailwind works!</h1>
           </section>
         </div>
     )
