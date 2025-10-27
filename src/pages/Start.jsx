@@ -48,10 +48,10 @@ export default function Start() {
                 </motion.h2>
                 <div className='grid grid-cols-1 sm:grid-cols-3 gap-10'>
                     {[
-                        { name: "Zahra", role: "Cinematographer, ghost" },
-                        { name: "Adam", role: "Editor" },
-                        { name: "Ibbe", role: "Actor (Luke)" },
-                        { name: "Matilda", role: "Writer, webdesigner" }
+                        { name: "Zahra", role: "cinematographer, ghost" },
+                        { name: "Adam", role: "editor" },
+                        { name: "Ibbe", role: "actor (Luke)" },
+                        { name: "Matilda", role: "writer, webdesigner" }
                     ].map((person, i) => (
                         <motion.div
                         key={i}
@@ -132,7 +132,6 @@ export default function Start() {
                 >
                     Quit / Back to Start ↑
                 </button>
-                <h1 className="text-red-500 text-4xl mt-10">Tailwind works!</h1>
           </section>
         </div>
     )

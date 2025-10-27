@@ -5,6 +5,7 @@ import Friends from './pages/Friends';
 import Location from './pages/Location';
 import Simulation from './pages/Simulation';
 import NotFound from './pages/NotFound';
+import Activities from './pages/Activities';
 
 export default function App() {
   const location = useLocation();
@@ -23,6 +24,7 @@ export default function App() {
             <Route path='/' element={<Start />} />
             <Route path='/friends' element={<Friends />} />
             <Route path='/location' element={<Location />} />
+            <Route path='/activities' element={<Activities />} />
             <Route path='/simulation' element={<Simulation />} />
             <Route path='*' element={<NotFound />} />
           </Routes>

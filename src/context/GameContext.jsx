@@ -5,15 +5,17 @@ const GameContext = createContext();
 export function GameProvider({ children }) {
     const [friend, setFriend ] = useState(null);
     const [location, setLocation] = useState(null);
+    const [activity, setActivity] = useState(null);
 
     const unlocked = {
         friends: true,
         location: !!friend,
-        simulation: !!friend && !!location,
+        activity: !!location,
+        simulation: !!friend && !!location && !!activity,
     };
 
     return (
-        <GameContext.Provider value={{ friend, setFriend, location, setLocation, unlocked }}>
+        <GameContext.Provider value={{ friend, setFriend, location, setLocation, activity, setActivity, unlocked }}>
             {children}
         </GameContext.Provider>
     );

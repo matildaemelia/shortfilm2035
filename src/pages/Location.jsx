@@ -1,6 +1,7 @@
 import { useGame } from '../context/GameContext';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import BackButton from '../components/BackButton';
 
 export default function Location() {
     const { location, setLocation, unlocked } = useGame();
@@ -48,10 +49,11 @@ export default function Location() {
                 ))}
             </div>
             {location ? (
-                <Link to='/simulation' className='bg-cyan-400 hover:bg-cyan-300 transition px-8 py-3 rounded-lg shadow-lg mt-8 text-black font-semibold'>Start Simulation</Link>
+                <Link to='/activities' className='bg-cyan-400 hover:bg-cyan-300 transition px-8 py-3 rounded-lg shadow-lg mt-8 text-black font-semibold'>Continue</Link>
             ) : (
                 <p className='text-gray-500 italic mt-8'>Choose a location to continue</p>
             )}
+            <BackButton />
         </motion.div>
     );
 }
