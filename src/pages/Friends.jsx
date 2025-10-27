@@ -22,13 +22,13 @@ export default function Friends() {
             <motion.h1 className='text-5xl font-bold text-cyan-400 tracking-widest drop-shadow-[0_0_15px_#00ffff]'>
                 Select Friend
             </motion.h1>
-            <div className='flex justify-center gap-6'>
+            <div className='flex flex-wrap justify-center gap-6 mt-6'>
                 {friends.map((f) => (
                     <button
                     key={f.name}
                     disabled={!f.unlocked}
                     onClick={() => f.unlocked && setFriend(f.name)}
-                    className={`px-8 py-4 rounded-xl text-lg font-semibold border-2 transition-all
+                    className={`px-8 py-4 rounded-xl text-lg font-semibold border-2 transition-all duration-300
                     ${
                         f.unlocked
                         ? friend === f.name

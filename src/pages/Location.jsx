@@ -31,13 +31,13 @@ export default function Location() {
                 Select Location
             </motion.h1>
             
-            <div className='flex justify-center gap-6'>
+            <div className='flex flex-wrap justify-center gap-6 mt-6'>
                 {locations.map((l) => (
                     <button
                     key={l.name}
                     disabled={!l.unlocked}
                     onClick={() => l.unlocked && setLocation(l.name)}
-                    className={`px-8 py-4 rounded-xl text-lg font-semibold border-2 transition-all
+                    className={`px-8 py-4 rounded-xl text-lg font-semibold border-2 transition-all duration-300
                     ${
                         l.unlocked
                         ? location === l.name
