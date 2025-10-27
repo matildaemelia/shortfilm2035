@@ -14,7 +14,7 @@ export default function Friends() {
 
     return (
         <motion.div 
-        className='flex flex-col items-center justify-center text-center min-h-screen space-y-8'
+        className='flex flex-col items-center justify-center min-h-screen text-center space-y-8 text-white'
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1}}

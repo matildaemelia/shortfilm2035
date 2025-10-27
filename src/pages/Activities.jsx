@@ -13,7 +13,7 @@ export default function Activities() {
 
     return (
         <motion.div
-        className='flex flex-col items-center justify-center min-h-screen text-center space-y-8 bg-black text-white'
+        className='flex flex-col items-center justify-center min-h-screen text-center space-y-8 text-white'
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
