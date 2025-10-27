@@ -27,7 +27,9 @@ export default function Location() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         >
-            <h1 className='text-5xl font-bold text-cyan-400 tracking-widest drop-shadow-[0_0_15px_#00ffff]'>Select location</h1>
+            <motion.h1 className='text-5xl font-bold text-cyan-400 tracking-widest drop-shadow-[0_0_15px_#00ffff]'>
+                Select Location
+            </motion.h1>
             
             <div className='flex justify-center gap-6'>
                 {locations.map((l) => (

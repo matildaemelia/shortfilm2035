@@ -19,7 +19,9 @@ export default function Friends() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1}}
         >
-            <h1 className='text-5xl font-bold text-cyan-400 tracking-widest drop-shadow-[0_0_15px_#00ffff]'>Select Friend</h1>
+            <motion.h1 className='text-5xl font-bold text-cyan-400 tracking-widest drop-shadow-[0_0_15px_#00ffff]'>
+                Select Friend
+            </motion.h1>
             <div className='flex justify-center gap-6'>
                 {friends.map((f) => (
                     <button

@@ -1,3 +1,5 @@
+import BackButton from "../components/BackButton";
+
 export default function Simulation() {
     return (
         <div className='flex flex-col items-center justify-center min-h-screen text-center space-y-6'>
@@ -6,6 +8,7 @@ export default function Simulation() {
                 <source src='/film2035.mp4' type='video/mp4'/>
                 Your browser does not support the video tag.
             </video>
+            <BackButton />
         </div>
     );
 }
