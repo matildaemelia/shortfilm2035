@@ -22,12 +22,12 @@ export default function Location() {
 
     return (
         <motion.div
-        className='flex flex-col items-center justify-center text-center space-y-8'
+        className='flex flex-col items-center justify-center min-h-screen text-center space-y-8'
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         >
-            <h1 className='text-5xl font-bold text-cyan-400 tracking-widest drop-shadow-lg'>Select location</h1>
+            <h1 className='text-5xl font-bold text-cyan-400 tracking-widest drop-shadow-[0_0_15px_#00ffff]'>Select location</h1>
             
             <div className='flex gap-6'>
                 {locations.map((l) => (

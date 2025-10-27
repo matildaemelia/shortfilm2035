@@ -14,11 +14,11 @@ export default function Start() {
     };
 
     return (
-        <div className='w-full bg-black text-white font-orbitron overflow-x-hidden'>
+        <div className='w-full text-white font-orbitron overflow-x-hidden'>
             {/* Section 1 -intro parallax */}
             <section className='relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden'>
                 {/* Bakgrund */}
-                <motion.div style={{ opacity: bgOpacity }} className='absolute inset-0 bg-[radial-gradient(circle_at_center,_#0ff_0%,_#001_80%)]'></motion.div>
+                <motion.div style={{ opacity: bgOpacity }} className='absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,255,255,0.3)_0%,_rgba(0,0,20,0.9)_40%,_rgba(0,0,0,0)_100%)]'></motion.div>
 
                 {/* Titel */}
                 <motion.h1 style={{ y: titleY }} className='text-[6rem] font-bold text-cyan-400 tracking-widest drop-shadow-[0_0_20px_#00ffff] z-10'>99% happy</motion.h1>
@@ -36,7 +36,7 @@ export default function Start() {
             </section>
 
             {/* Section 2 - team info */}
-            <section className='min-h-screen flex flex-col items-center justify-center text-center space-y-10 px-6 bg-gradient-to-b from-black to-gray-900'>
+            <section className='min-h-screen flex flex-col items-center justify-center text-center space-y-10 px-6'>
                 <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -46,12 +46,12 @@ export default function Start() {
                 >
                     The Production Team
                 </motion.h2>
-                <div className='grid grid-cols-1 sm:grid-cols-3 gap-10'>
+                <div className='grid grid-cols-1 sm:grid-cols-4 gap-10'>
                     {[
                         { name: "Zahra", role: "cinematographer, ghost" },
+                        { name: "Matilda", role: "writer, webdesigner" },
                         { name: "Adam", role: "editor" },
-                        { name: "Ibbe", role: "actor (Luke)" },
-                        { name: "Matilda", role: "writer, webdesigner" }
+                        { name: "Ibbe", role: "actor (Luke)" }
                     ].map((person, i) => (
                         <motion.div
                         key={i}
@@ -71,13 +71,13 @@ export default function Start() {
             </section>
 
             {/* Section 3 - Film introduction */}
-            <section className='min-h-screen flex flex-col items-center justify-center text-center px-6 bg-black relative'>
+            <section className='min-h-screen flex flex-col items-center justify-center text-center px-6 relative'>
                 <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delaty: 0.2 }}
                 viewport={{ once: true }}
-                className='text-gray-400 mb-10'
+                className='max-w-2xl text-gray-400 mb-10'
                 >
                     The world of 2035 is the happiest it has ever been. Thanks to 99% Happy everyone who wishes can live the life they desire, with friends they love, and be completely themselves without judgement.{' '}
                 </motion.p>
