@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,8 +26,14 @@ body {
   background-color: #000;
   color: #fff;
   min-height: 100vh;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur271.cur), auto !important;
 }
+
+.font-pixel {
+  font-family: 'Press Start 2P', cursive;
+}
+
 
 /* rensa eventuella tidigare globala länkar/knappar */
 a, button {
@@ -36,11 +42,61 @@ a, button {
   text-decoration: none;
   border: none;
   font: inherit;
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur271.cur), auto !important;
 }
 
 canvas {
   pointer-events: none;
+}
+
+@keyframes glitchBlink {
+  0%, 90%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 15px #00ffff;
+  }
+  92%, 94% {
+    opacity: 0.6;
+    text-shadow: 2px 2px #ff00ff;
+  }
+  96%, 98% {
+    opacity: 1;
+    text-shadow: -2px -2px #00ffff;
+  }
+}
+
+.glitch-text {
+  animation: glitchBlink 10s infinite;
+  animation-timing-function: steps(2, end);
+}
+
+.rajdhani-light {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rajdhani-medium {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rajdhani-semibold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rajdhani-bold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /*

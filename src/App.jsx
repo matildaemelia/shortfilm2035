@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import StarsBackground from './components/StarsBackground';
+import NoiseBackground from './components/NoiseBackground';
 import Start from './pages/Start';
 import Friends from './pages/Friends';
 import Location from './pages/Location';
@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <div className='relative min-h-screen text-white overflow-x-hidden'>
-      <StarsBackground />
+      <NoiseBackground />
       <div className='relative z-10 flex items-center justify-center'>
         <AnimatePresence mode='wait'>
           <motion.div
