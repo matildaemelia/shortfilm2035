@@ -19,7 +19,7 @@ export default function NoiseBackground() {
             const buffer = imageData.data;
 
             for (let i = 0; i < buffer.length; i += 4) {
-                const val = 15 + Math.random() * 25;
+                const val = 15 + Math.random() * 50;
                 buffer[i] = val;
                 buffer[i + 1] = val;
                 buffer[i + 2] = val;
@@ -32,7 +32,7 @@ export default function NoiseBackground() {
         window.addEventListener('resize', resize);
 
         let animationFrame;
-        function animate() {
+        function animate(time) {
             drawNoise();
             animationFrame = requestAnimationFrame(animate);
         }
@@ -51,7 +51,7 @@ export default function NoiseBackground() {
             style={{
                 backgroundColor: 'black',
                 opacity: 1,
-                filter: 'contrast(120%) brightness(100%)',
+                filter: 'contrast(110%) brightness(90%)',
             }}
         />
     );

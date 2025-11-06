@@ -99,6 +99,12 @@ canvas {
   font-style: normal;
 }
 
+.bg-radial-bright {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.597) 0%, rgba(0, 0, 0, 0) 55%);
+}
+
+
+
 /*
 
 body {
